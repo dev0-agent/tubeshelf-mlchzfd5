@@ -15,7 +15,7 @@ It is automatically updated by dev0 as tasks are completed.
 
 ## Phase 2
 
-- [ ] ⏳ **Implement 'Add Video' Functionality**
+- [x] ✅ **Implement 'Add Video' Functionality**
   Create a dialog/modal component that accepts a YouTube URL. Implement a utility function to extract the YouTube Video ID from various URL formats (standard, shorts, share links). On submission, fetch basic metadata (thumbnail URL is derivable from ID) and add the video object to the global store.
 
 - [ ] ⏳ **Video Grid Component**
