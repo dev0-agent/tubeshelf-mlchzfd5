@@ -18,7 +18,7 @@ It is automatically updated by dev0 as tasks are completed.
 - [x] ✅ **Implement 'Add Video' Functionality**
   Create a dialog/modal component that accepts a YouTube URL. Implement a utility function to extract the YouTube Video ID from various URL formats (standard, shorts, share links). On submission, fetch basic metadata (thumbnail URL is derivable from ID) and add the video object to the global store.
 
-- [ ] ⏳ **Video Grid Component**
+- [x] ✅ **Video Grid Component**
   Develop the main dashboard view displaying videos in a responsive grid. Each card should show the thumbnail, title (user-editable or placeholder), and existing tags. Clicking a card should navigate to the Player view.
 
 - [ ] ⏳ **Video Player Integration**
