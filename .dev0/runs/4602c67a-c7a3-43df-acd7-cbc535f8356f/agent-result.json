@@ -1,0 +1,7 @@
+{
+  "status": "success",
+  "commitMessage": "Set up app layout and routing with shadcn/ui Sidebar and React Router",
+  "prTitle": "App Layout and Routing",
+  "prBody": "This PR implements the main application layout and routing for TubeShelf.\n\nKey changes:\n- Installed `react-router-dom` for navigation.\n- Created `AppLayout` component with a responsive Sidebar and Header using shadcn/ui components.\n- Configured routes for 'Library' (index) and 'Player' (/player) views.\n- Integrated `VideoProvider` for global state management.\n- Created placeholder pages for Library and Player views.",
+  "notes": "The layout uses the latest shadcn/ui sidebar pattern which is highly responsive and configurable. React Router v7 is used for navigation."
+}

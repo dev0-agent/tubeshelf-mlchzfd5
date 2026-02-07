@@ -7,10 +7,10 @@ It is automatically updated by dev0 as tasks are completed.
 
 ## Phase 1
 
-- [ ] ⏳ **Define Types and Storage Context**
+- [x] ✅ **Define Types and Storage Context**
   Create the TypeScript interfaces for `Video`, `Note`, and `Tag`. Implement a React Context (`VideoContext`) and a custom hook `useLocalStorage` to manage the application state. The context should expose methods to add, update, and delete videos, automatically syncing with browser LocalStorage.
 
-- [ ] ⏳ **App Layout and Routing**
+- [x] ✅ **App Layout and Routing**
   Set up the main application layout using a Sidebar/Header structure. Configure React Router (if needed, or simple conditional rendering) to switch between the 'Library' view and 'Player/Details' view. Include a responsive shell using shadcn/ui components.
 
 ## Phase 2
