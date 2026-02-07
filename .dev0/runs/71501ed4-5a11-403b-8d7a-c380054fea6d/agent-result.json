@@ -1,0 +1,7 @@
+{
+  "status": "success",
+  "commitMessage": "feat: Implement 'Add Video' dialog with metadata fetching",
+  "prTitle": "Implement Add Video Functionality",
+  "prBody": "This PR introduces the 'Add Video' feature. It includes:\n- A new `AddVideoDialog` component for inputting YouTube URLs.\n- A utility function `extractYouTubeId` to parse video IDs from various YouTube URL formats (standard, shorts, share links).\n- Integration with `noembed` to fetch video metadata (title, author).\n- Automatic thumbnail URL construction.\n- Updates to `AppHeader` to include the 'Add Video' button.",
+  "notes": "The implementation relies on `noembed.com` for fetching video metadata without an API key. If the service is unavailable, the user will see an error message. Future improvements could include a manual fallback for adding video details."
+}

@@ -9,6 +9,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 import { useLocation } from "react-router-dom"
+import { AddVideoDialog } from "@/components/add-video-dialog"
 
 export function AppHeader() {
   const location = useLocation()
@@ -39,6 +40,9 @@ export function AppHeader() {
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
+      <div className="ml-auto flex items-center gap-2">
+        <AddVideoDialog />
+      </div>
     </header>
   )
 }
