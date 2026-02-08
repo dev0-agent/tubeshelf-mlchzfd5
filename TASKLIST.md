@@ -21,7 +21,7 @@ It is automatically updated by dev0 as tasks are completed.
 - [x] ✅ **Video Grid Component**
   Develop the main dashboard view displaying videos in a responsive grid. Each card should show the thumbnail, title (user-editable or placeholder), and existing tags. Clicking a card should navigate to the Player view.
 
-- [ ] ⏳ **Video Player Integration**
+- [x] ✅ **Video Player Integration**
   Create a `PlayerView` component that embeds the YouTube video using `react-youtube` or an iframe wrapper. Ensure the player is responsive and handles basic errors (e.g., video deleted).
 
 ## Phase 3
