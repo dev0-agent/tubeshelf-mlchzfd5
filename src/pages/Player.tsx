@@ -2,6 +2,7 @@ import { useSearchParams, Link } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
 import { useVideo } from "@/context/video-context";
 import { PlayerView } from "@/components/player-view";
+import { TagManager } from "@/components/tag-manager";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
@@ -60,7 +61,7 @@ export default function Player() {
               <h1 className="text-2xl font-bold tracking-tight leading-tight">
                 {video.title}
               </h1>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 items-center">
                 {videoTags.length > 0 ? (
                   videoTags.map((tag) => (
                     <Badge key={tag.id} variant="secondary" className="px-2 py-0.5">
@@ -70,6 +71,7 @@ export default function Player() {
                 ) : (
                   <span className="text-sm text-muted-foreground italic">No tags</span>
                 )}
+                <TagManager videoId={video.id} />
               </div>
             </div>
 

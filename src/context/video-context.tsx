@@ -8,7 +8,7 @@ interface VideoContextType {
   addVideo: (video: Omit<Video, "id" | "createdAt" | "updatedAt" | "notes">) => void;
   updateVideo: (id: string, video: Partial<Video>) => void;
   deleteVideo: (id: string) => void;
-  addTag: (name: string) => void;
+  addTag: (name: string) => Tag | undefined;
   deleteTag: (id: string) => void;
 }
 
@@ -42,13 +42,14 @@ export function VideoProvider({ children }: { children: ReactNode }) {
   };
 
   const addTag = (name: string) => {
-    setTags((prev) => {
-      // Prevent duplicate tag names
-      if (prev.some((t) => t.name.toLowerCase() === name.toLowerCase())) {
-        return prev;
-      }
-      return [...prev, { id: crypto.randomUUID(), name }];
-    });
+    // Check existing in `tags` (captured from render scope)
+    const existing = tags.find((t) => t.name.toLowerCase() === name.toLowerCase());
+    if (existing) {
+      return existing;
+    }
+    const newTag = { id: crypto.randomUUID(), name };
+    setTags((prev) => [...prev, newTag]);
+    return newTag;
   };
 
   const deleteTag = (id: string) => {

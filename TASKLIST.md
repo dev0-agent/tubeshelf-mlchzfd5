@@ -26,7 +26,7 @@ It is automatically updated by dev0 as tasks are completed.
 
 ## Phase 3
 
-- [ ] ⏳ **Tagging System UI & Logic**
+- [x] ✅ **Tagging System UI & Logic**
   Implement the UI for managing tags within the `PlayerView` or a dedicated edit modal. Allow users to create new tags and toggle existing ones for the current video. Update the store to reflect these relationships.
 
 - [ ] ⏳ **Notes and Comments Feature**
